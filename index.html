@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     
     <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="css/navbarslide.css" rel="stylesheet"> 
 
     <!-- boostrap dont disturb-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,9 +23,9 @@
        margin-left: 45px;
     margin-right: 45px;
    }
-    </style>
+    
 
-<style>
+
 #navbar {
     background-color: #333; /* Black background color */
     position: fixed; /* Make it stick/fixed */
@@ -48,8 +49,6 @@
     color: white;
     text-align: center;
     padding: 15px;
-
-    
 }
 #navbar b:hover {
     background-color: rgb(20, 121, 107);
@@ -60,6 +59,9 @@
     background-color: rgb(20, 121, 107);
     color: black;
 }
+</style> 
+
+
 </style>
 
 </head>
@@ -199,7 +201,7 @@
       
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <div id="navbar">
+            <div id="menu--juliet">
                 <b href="#"><i class="fa fa-search"></i></b> 
                 <a href="#home">Home</a>
                 <a href="#news">News</a>
@@ -212,9 +214,9 @@
 
 function scrollFunction() {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("menu--juliet").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("menu--juliet").style.top = "-50px";
   }
 }
 </script>
