@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,25 +7,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS put css here-->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <link href="assets/css/animate.css" rel="stylesheet">
 
     <!-- boostrap dont disturb-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- js-->
     <script src="main.js"></script>
+
+    <style>
+   header .header{ 
+       background-color: #000000;
+       margin-left: 45px;
+    margin-right: 45px;
+   }
+    </style>
+
+<style>
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+#navbar b {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
     
+}
+#navbar b:hover {
+    background-color: rgb(20, 121, 107);
+    
+}
+
+#navbar a:hover {
+    background-color: rgb(20, 121, 107);
+    color: black;
+}
+</style>
 
 </head>
 <body>
-    
 
+        <div id="wrapper">
+                <header>
+                    <div class="container-fluid header" style="height: 859px;">
+                        <nav class="navbar navbar-default">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a href="/"><img src="assets/img/logo.svg" class="logo-mobile"></a>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+                              
+                              <a href="/"><img src="assets/img/logo.svg" class="logo wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></a>
+                              
+                              <ul class="nav navbar-nav right">
+                                <li><a href="weinbau">Weinbau</a></li>
+                         
+                                <li><a href="kontakt">Kontakt</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                                <li><a href="shop">Shop</a></li>
+                        <h1 class="tlt" data-in-effect="fadeInDown" data-out-effect="fadeOutDown" style="margin-top: 259.5px; display: none;"><span style="visibility: hidden;"><span class="word1" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1 animated fadeInDown" style="display: inline-block; visibility: visible;">G</span><span class="char2 animated fadeInDown" style="display: inline-block; visibility: visible;">n</span><span class="char3 animated fadeInDown" style="display: inline-block; visibility: visible;">a</span><span class="char4 animated fadeInDown" style="display: inline-block; visibility: visible;">s</span><span class="char5 animated fadeInDown" style="display: inline-block; visibility: visible;">e</span><span class="char6 animated fadeInDown" style="display: inline-block; visibility: visible;">r</span></span> </span><ul class="texts" style="display: none;"><li class="current">Gnaser</li></ul></h1>
+                        <h1 class="tlt2" data-in-effect="fadeInDown" data-out-effect="fadeOutDown" style="margin-top: 289.5px;"><span style="visibility: hidden;"><span class="word1" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1" style="display: inline-block; visibility: visible;">S</span><span class="char2" style="display: inline-block; visibility: visible;">e</span><span class="char3" style="display: inline-block; visibility: visible;">i</span></span> <span class="word2" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1" style="display: inline-block; visibility: visible;">h</span><span class="char2" style="display: inline-block; visibility: visible;">i</span><span class="char3" style="display: inline-block; visibility: visible;">e</span><span class="char4" style="display: inline-block; visibility: visible;">r</span></span> <span class="word3" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1" style="display: inline-block; visibility: visible;">G</span><span class="char2" style="display: inline-block; visibility: visible;">a</span><span class="char3" style="display: inline-block; visibility: visible;">s</span><span class="char4" style="display: inline-block; visibility: visible;">t</span><span class="char5" style="display: inline-block; visibility: visible;">.</span></span> </span><ul class="texts" style="display: none;"><li class="current">Sei hier Gast.</li></ul></h1>
+                    </div>
+                    
+                    <div class="col-lg-12 wow fadeInUp mouse-container animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="mouse">
+                            <div class="scroll"></div>
+                        </div>
+                    </div>
+                </header>
+                
+                <!--Fullscreen-Modal-Menu-->
+                <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-inner-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-lg" style="color:#999;"></i></button>	
+                                        <h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <ul>
+                                        <li class="active"><a href="index">Home</a></li>
+                                        <li><a href="buschenschank">Buschenschank</a></li>
+                                        <li><a href="urlaub">Urlaub</a></li>
+                                        <li><a href="weinbau">Weinbau</a></li>
+                                        <li><a href="shop">Shop</a></li>
+                                        <li><a href="kontakt">Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--inner-content-->
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.fullscreen -->
+                
+                <div class="container steirisch">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0">
+                            
+                            <div class="row row-eq-height">
+                                <div class="col-sm-6">
+                                    <h1 class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">Steirisch.</h1>
+                                    <div class="crop">
+                                        <img src="assets/img/steirisch_v2.jpg" data-rjs="2" alt="Steirisch" class="img-responsive image">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">	
+                                    <div class="bottom wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <p>Im grünen Herzen Österreichs, eingebettet in der idyllischen Landschaft der Südsteiermark in Gamlitz, liegt ein Paradies für Genießer. 1978 öffnete der Buschenschank das erste Mal seine Türen.</p>
+                                        <a href="buschenschank"><span class="more">Mehr dazu …</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row-eq-height left">
+                                <div class="col-sm-6">	
+                                    <div class="bottom wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <p>Unsere selbstgemachten Weine überzeugen so manch einen Kritiker und wurden bereits mit zahlreichen Auszeichnung für ihre Qualität und ihren Geschmack belohnt. Wein für daheim oder zum Verschenken – direkt in unserem Shop bestellen.</p>
+                                        <a href="shop"><span class="more">Zum Shop.</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 right">
+                                    <h1 class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">Handauslese.</h1>
+                                    <div class="crop">
+                                        <img src="assets/img/handauslese.jpg" data-rjs="2" alt="Handauslese" class="img-responsive image">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row-eq-height">
+                                <div class="col-sm-6">
+                                    <h1 class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">Besuchen.</h1>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10937.655107096647!2d15.537309!3d46.737023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1f4ed0d5e4ccc57!2sBuschenschank+Gnaser-Wolf!5e0!3m2!1sde!2sat!4v1490961927493" class="img-responsive map" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                </div>
+                                <div class="col-sm-6">	
+                                    <div class="bottom wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <!--<h2>Wir ruhen gerade</h2>
+                                        <p>Unser Buschenschank hat ab Februar wieder für Sie geöffnet!<br>Reservierungen nehmen wir gerne unter <a href="tel:034535115">03453 / 51 15</a> entgegen.</p>-->
+                                        <h2 id="isopen">Wir ruhen gerade.</h2>
+                                        <p>Unser Buschenschank hat von Mittwoch bis Sonntag ab 14:00 Uhr geöffnet. Reservierungen nehmen wir gerne unter <a href="tel:034535115">03453 / 51 15</a> entgegen.</p>
+                                        <!--<h2 id="isopen">Wir ruhen gerade.</h2>
+                                        <p>Unser Buschenschank hat von Freitag bis Sonntag ab 14:00 Uhr geöffnet. Reservierungen nehmen wir gerne unter <br><a href="tel:034535115">03453 / 51 15</a> entgegen.</p>-->
+                                        <a href="kontakt"><span class="more">Kontakt.</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-10 col-xs-offset-1">
+                                    <p class="quote wow fadeIn" data-wow-duration="1s" style="visibility: hidden; animation-duration: 1s; animation-name: none;">
+                                        Das Leben bewahrt man sich nicht auf. <span class="break">Man genießt es in vollen Zügen.</span> <span class="break">Wie ein gutes Glas Wein.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
     
+                        </div><!--col-->
+                    </div><!--row-->
+                </div><!--container-->
+                <div id="push"></div>
+            </div>
+      
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div id="navbar">
+                <b href="#"><i class="fa fa-search"></i></b> 
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+              </div>
+
      <!-- js here-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
 </body>
 </html>
 
@@ -44,6 +242,7 @@ http://www.cookiesound.com/ (Another Interest Content Web)
 http://theestatetrentham.com.au/ (Interesting Layout)
 http://dyosuites.com/ (Interesting Design)
 http://www.concadelsogno.it/ (Very good Content Interaction Web)
+
 
 
 
