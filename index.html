@@ -42,7 +42,7 @@
                     
                 <li class="menu__itemx"><a href="#" class="menu__linkx">Login</a></li>
                 <li class="menu__itemx"><a href="#" class="menu__linkx">Sign Up</a></li>
-                <li class="menu__itemx"><a href="#" class="menu__linkx">Contact</a></li>
+                <li class="menu__itemx"><a href="#about"  class="menu__linkx">Contact</a></li>
                 <li class="menu__itemx"><a href="#" class="menu__linkx">Blog</a></li>
                 
             </ul>
@@ -72,37 +72,7 @@
     </section>
 
 
-    <div class="grid">
-        <figure class="effect-julia">
-            <img src="image/15.jpg" alt="img21" />
-            <figcaption>
-                <h2>Passionate
-                    <span>Phuket</span>
-                </h2>
-                <div>
-                    <p>sea</p>
-                    <p>sun</p>
-                    <p>and you</p>
-                </div>
-                <a href="#">View more</a>
-            </figcaption>
-        </figure>
-        <figure class="effect-julia">
-            <img src="image/16.jpg" alt="img22" />
-            <figcaption>
-                <h2>Passionate
-                    <span>chiangmai</span>
-                </h2>
-                <div>
-                    <p>cool</p>
-                    <p>cold</p>
-                    <p>with car</p>
-                </div>
-                <a href="#">View more</a>
-            </figcaption>
-        </figure>
-    </div>
-
+   
 
 
     <div class="parallax2" id="about"></div>
@@ -129,30 +99,9 @@
 
             
     </div>
-
+    <div class="parallax"></div>
     
 
-    <script>
-        //Menu Bar
-
-
-        //Nav Bar
-        window.onscroll = function() {scrollFunction()};
-        
-        var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-        function scrollFunction() {
-          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            document.getElementById("navbar").style.top = "0px";
-          } else {
-            document.getElementById("navbar").style.top = "-150px";
-          }
-        }
-    </script>
         
 
     <!-- js here-->
@@ -164,6 +113,27 @@
         crossorigin="anonymous"></script>
 
     
+        <script>
+            //Menu Bar
+    
+    
+            //Nav Bar
+            window.onscroll = function() {scrollFunction()};
+            
+            var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+            function scrollFunction() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("navbar").style.top = "0px";
+              } else {
+                document.getElementById("navbar").style.top = "-150px";
+              }
+            }
+        </script>
 </body>
 
 </html>
