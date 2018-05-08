@@ -4,7 +4,9 @@ body, html {
 
 .parallax {
     /* The image used */
+    
     background-image: url('../image/cover1.jpg');
+    
 
     /* Full height */
     height: 100%; 
@@ -15,6 +17,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax a{
+    background: linear-gradient(rgba(80, 80, 80, 0.281) 10%, rgba(255, 255, 255, 0) 85%);
+}
+
 .parallax2 {
     /* The image used */
     background-image: url('../image/cover2.jpg');
