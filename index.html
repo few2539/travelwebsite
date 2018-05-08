@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS put css here-->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/paralax.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hitravel.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/set2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbarANDFX.css" />
+   
+
 
     <!-- boostrap dont disturb-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <!-- js-->
-    <script src="main.js"></script>
-    
+
+
     <style>
+
 
 .menu {
     float: right;
-	line-height: 1;
+	line-height: 0;
 	margin: 0 auto 0em;
 }
 
@@ -258,24 +265,287 @@
 .menu--juliet .menu__link::after {
 	background: #d94f5c;
 }
-.menu__list1{
-    float: left;
+
+        
+
+.menux {
+    
+    float: right;
+	line-height: 1;
+	margin: 0 auto 0em;
 }
 
-        </style>
+.menu__listx {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__itemx {
+    
+	display: block;
+    margin: 1em 2;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.menu__linkx {
+    float: right;
+	font-size: .95em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__linkx:hover,
+.menu__linkx:focus {
+	outline: none;
+}
+
+.menu--julietx .menu__itemx {
+    position: relative;
+	-webkit-transition: color .25s;
+	transition: color .25s;
+}
+
+.menu--julietx .menu__itemx::before,
+.menu--julietx .menu__itemx::after,
+.menu--julietx .menu__itemx--current::before,
+.menu--julietx .menu__itemx--current::after {
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+}
+.menu--julietx .menu__itemx::before,
+.menu--julietx .menu__itemx::after {
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transform-origin: left left;
+	transform-origin: left left;
+	-webkit-transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--julietx .menu__itemx--current::before,
+.menu--julietx .menu__itemx--current::after {
+   	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--julietx .menu__itemx:hover::before,
+.menu--julietx .menu__itemx:hover::after {
+   	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+
+.menu--julietx .menu__itemx::before {
+	top: 95%;
+	margin-left: -9px;
+	border-width: 10px;
+	border-top-color: #ffffff;
+}
+
+.menu--julietx .menu__itemx--current::before {
+	margin-left: -9px;
+	border-width: 10px;
+	border-top-color: #d94f5c;
+}
+
+.menu--julietx .menu__itemx::after,
+.menu--julietx .menu__itemx--current::after {
+	top: 94%;
+	margin-left: -5px;
+	border-width: 6px;
+	border-top-color: #a0ecff;
+}
+
+.menu--julietx .menu__linkx {
+	position: relative;
+	margin: 0 1em;
+	padding-right: 0;
+	padding-left: 0;
+	color: #ffffff;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.menu--julietx .menu__itemx--current .menu__linkx,
+.menu--julietx .menu__itemx--current .menu__linkx:hover,
+.menu--julietx .menu__itemx--current .menu__linkx:focus {
+	color: #d94f5c;
+}
+
+.menu--julietx .menu__itemx--current .menu__linkx::after,
+.menu--julietx .menu__itemx--current .menu__linkx::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.menu--julietx .menu__itemx--current .menu__linkx::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--julietx .menu__linkx:hover,
+.menu--julietx .menu__linkx:focus {
+	color: #ffffff;
+}
+
+.menu--julietx .menu__itemx:hover .menu__linkx::before,
+.menu--julietx .menu__itemx:focus .menu__linkx::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--julietx .menu__linkx::before,
+.menu--julietx .menu__linkx::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--julietx .menu__linkx::before {
+	background: #ffffff;
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.menu--julietx .menu__linkx::after {
+	background: #d94f5c;
+}
+
+ulx {
+	background:linear-gradient(rgba(68, 68, 68, 0.438) 10%, rgba(255, 255, 255, 0) 85%);
+    list-style-type: none;
+    margin: 0;
+    padding: 45px 1600px;
+    overflow: hidden;
+	position: absolute;
+}
+
+ulx li a {
+    display: block;
+    text-align: center;
+    position: absolute;
+    padding: 30px 1000px;
+    text-decoration: none;
+}
+
+    </style>
 
 </head>
+
 <body>
     <!--bar menu-->
-   
+            <ulx>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ulx>
 
+
+    <nav class="menu menu--julietx">
+            
+            <ul class="menu__listx">
+                    
+                <li class="menu__itemx"><a href="#" class="menu__linkx">Login</a></li>
+                <li class="menu__itemx"><a href="#" class="menu__linkx">Sign Up</a></li>
+                <li class="menu__itemx"><a href="#" class="menu__linkx">Contact</a></li>
+                <li class="menu__itemx"><a href="#" class="menu__linkx">Blog</a></li>
+                
+            </ul>
+    </nav>
     <!--paralax-->
-    <div class="parallax" ></div>
+    <div class="parallax"></div>
 
-    <div style="height:200px;background-color:#ffff;font-size:36px">
-    contentfewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+    <section class="bg-primary" id="hitravel">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading-texthi">HI TRAVEL</h2>
+                    <hr class="lighthr my-4">
+                    <p class="text-faded-convince mb-4">letsgoletsgoletsgoletsgoletsgoletsgo letsgoletsgoletsgoletsgoletsgoletsgoletsgoletsgo letsgoletsgo letsgoletsgoletsgoletsgoletsgoletsgo
+                        letsgoletsgo letsgoletsgoletsgo letsgoletsgoletsgoletsgo letsgo letsgo</p>
+                    <div class="scroll">
+                        <div class="mouse-icon">
+                            <div class="wheel"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <div class="grid">
+        <figure class="effect-julia">
+            <img src="image/15.jpg" alt="img21" />
+            <figcaption>
+                <h2>Passionate
+                    <span>Phuket</span>
+                </h2>
+                <div>
+                    <p>sea</p>
+                    <p>sun</p>
+                    <p>and you</p>
+                </div>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-julia">
+            <img src="image/16.jpg" alt="img22" />
+            <figcaption>
+                <h2>Passionate
+                    <span>chiangmai</span>
+                </h2>
+                <div>
+                    <p>cool</p>
+                    <p>cold</p>
+                    <p>with car</p>
+                </div>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
     </div>
-    
+
+
+
     <div class="parallax2"></div>
 
     <div id="navbar">
@@ -301,8 +571,13 @@
             
     </div>
 
+    
 
     <script>
+        //Menu Bar
+
+
+        //Nav Bar
         window.onscroll = function() {scrollFunction()};
         
         var x = document.getElementById("myTopnav");
@@ -313,19 +588,23 @@
     }
         function scrollFunction() {
           if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.top = "0px";
           } else {
             document.getElementById("navbar").style.top = "-150px";
           }
         }
     </script>
         
+
+    <!-- js here-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     
-     <!-- js here-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-	
 </body>
+
 </html>

@@ -1,40 +1,13 @@
-.navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-}
-
-.navbar b {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-.navbar b:hover {
-    background-color: rgb(20, 121, 107);
-    
-}
-
-.navbar a:hover {
-    background-color: rgb(20, 121, 107);
-    color: black;
-}
-
-
-.menu--juliet .menu__item {
+.menu--julietx .menu__item {
 	position: relative;
 	-webkit-transition: color .25s;
 	transition: color .25s;
 }
 
-.menu--juliet .menu__item::before,
-.menu--juliet .menu__item::after,
-.menu--juliet .menu__item--current::before,
-.menu--juliet .menu__item--current::after {
+.menu--julietx .menu__item::before,
+.menu--julietx .menu__item::after,
+.menu--julietx .menu__item--current::before,
+.menu--julietx .menu__item--current::after {
 	position: absolute;
 	left: 50%;
 	width: 0;
@@ -43,8 +16,8 @@
 	content: '';
 	pointer-events: none;
 }
-.menu--juliet .menu__item::before,
-.menu--juliet .menu__item::after {
+.menu--julietx .menu__item::before,
+.menu--julietx .menu__item::after {
 	-webkit-transform: scale3d(0, 1, 1);
 	transform: scale3d(0, 1, 1);
 	-webkit-transform-origin: left left;
@@ -53,16 +26,16 @@
 	transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.menu--juliet .menu__item--current::before,
-.menu--juliet .menu__item--current::after {
+.menu--julietx .menu__item--current::before,
+.menu--julietx .menu__item--current::after {
    	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.menu--juliet .menu__item:hover::before,
-.menu--juliet .menu__item:hover::after {
+.menu--julietx .menu__item:hover::before,
+.menu--julietx .menu__item:hover::after {
    	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -70,28 +43,28 @@
 }
 
 
-.menu--juliet .menu__item::before {
+.menu--julietx .menu__item::before {
 	top: 95%;
 	margin-left: -9px;
 	border-width: 10px;
 	border-top-color: #b5b5b5;
 }
 
-.menu--juliet .menu__item--current::before {
+.menu--julietx .menu__item--current::before {
 	margin-left: -9px;
 	border-width: 10px;
 	border-top-color: #d94f5c;
 }
 
-.menu--juliet .menu__item::after,
-.menu--juliet .menu__item--current::after {
+.menu--julietx .menu__item::after,
+.menu--julietx .menu__item--current::after {
 	top: 94%;
 	margin-left: -5px;
 	border-width: 6px;
 	border-top-color: #2a282b;
 }
 
-.menu--juliet .menu__link {
+.menu--julietx .menu__link {
 	position: relative;
 	margin: 0 1em;
 	padding-right: 0;
@@ -101,38 +74,38 @@
 	transition: color 0.4s;
 }
 
-.menu--juliet .menu__item--current .menu__link,
-.menu--juliet .menu__item--current .menu__link:hover,
-.menu--juliet .menu__item--current .menu__link:focus {
+.menu--julietx .menu__item--current .menu__link,
+.menu--julietx .menu__item--current .menu__link:hover,
+.menu--julietx .menu__item--current .menu__link:focus {
 	color: #d94f5c;
 }
 
-.menu--juliet .menu__item--current .menu__link::after,
-.menu--juliet .menu__item--current .menu__link::before {
+.menu--julietx .menu__item--current .menu__link::after,
+.menu--julietx .menu__item--current .menu__link::before {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 }
 
-.menu--juliet .menu__item--current .menu__link::before {
+.menu--julietx .menu__item--current .menu__link::before {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
-.menu--juliet .menu__link:hover,
-.menu--juliet .menu__link:focus {
+.menu--julietx .menu__link:hover,
+.menu--julietx .menu__link:focus {
 	color: #b5b5b5;
 }
 
-.menu--juliet .menu__item:hover .menu__link::before,
-.menu--juliet .menu__item:focus .menu__link::before {
+.menu--julietx .menu__item:hover .menu__link::before,
+.menu--julietx .menu__item:focus .menu__link::before {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
-.menu--juliet .menu__link::before,
-.menu--juliet .menu__link::after {
+.menu--julietx .menu__link::before,
+.menu--julietx .menu__link::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -147,12 +120,12 @@
 	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.menu--juliet .menu__link::before {
+.menu--julietx .menu__link::before {
 	background: #b5b5b5;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
-.menu--juliet .menu__link::after {
+.menu--julietx .menu__link::after {
 	background: #d94f5c;
 }
